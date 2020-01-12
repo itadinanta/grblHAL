@@ -107,6 +107,10 @@
 #endif
 
 // Define spindle enable and spindle direction output pins.
+#define SPINDLE_DIRECTION_PORT  PIOB
+#define SPINDLE_DIRECTION_PIN   27  // Due Digital Pin 13
+#define SPINDLE_DIRECTION_BIT   (1<<SPINDLE_DIRECTION_PIN)
+
 #define SPINDLE_ENABLE_PORT     PIOD
 #define SPINDLE_ENABLE_PIN      8	// Due Digital Pin 12
 #define SPINDLE_ENABLE_BIT      (1<<SPINDLE_ENABLE_PIN)
