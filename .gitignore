@@ -29,3 +29,6 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+drivers/SAM3X8E/main/src/grbl/
+~
+*~
