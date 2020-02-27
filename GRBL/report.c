@@ -269,7 +269,7 @@ void report_feedback_message(message_code_t message_code)
 void report_init_message (void)
 {
     override_counter = wco_counter = 0;
-    hal.stream.write("\r\nGrblHAL " GRBL_VERSION " ['$' for help]\r\n");
+    hal.stream.write("\r\nGrbl " GRBL_VERSION " ['$' for help]\r\n");
 }
 
 // Grbl help message

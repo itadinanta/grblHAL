@@ -373,7 +373,7 @@
 #define MAX_STORED_LINE_LENGTH 80
 
 // Number of tools in ATC tool table, comment out to disable
-#define N_TOOLS 8
+// #define N_TOOLS 8
 
 // Enable EEPROM emulation/buffering in RAM (allocated from heap)
 // Can be used for MCUs with no EEPROM or as buffer in order to avoid writing to EEPROM when not in idle state.
