@@ -30,7 +30,7 @@
 //#define BOARD_RAMPS_16
 //#define BOARD_MEGA256
 //#define BOARD_PROTONEER
-//#define BOARD_CMCGRATH
+#define BOARD_CMCGRATH
 
 /******************************************************************************
 * Definitions for bit band access and dynamic IRQ registration                *
@@ -56,7 +56,7 @@ void IRQUnRegister(int32_t IRQnum);
 // Configuration
 // Set value to 1 to enable, 0 to disable
 #define USB_SERIAL       0
-#define EEPROM_ENABLE    0 // I2C EEPROM (24LC16) support (using TWI0).
+#define EEPROM_ENABLE    1 // I2C EEPROM (24LC16) support (using TWI0).
 // NOTE: none of the following options are ready. DO NOT ENABLE!
 #define SDCARD_ENABLE    0
 #define KEYPAD_ENABLE    0 // I2C keypad for jogging etc.

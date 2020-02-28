@@ -21,12 +21,12 @@
   along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#define X2_STEP_PORT      A_STEP_PORT
-#define X2_STEP_PIN       A_STEP_PIN
-#define X2_DIRECTION_PORT A_DIRECTION_PORT
-#define X2_DIRECTION_PIN  A_DIRECTION_PIN
-#define X2_DISABLE_PORT   A_DISABLE_PORT
-#define X2_DISABLE_PIN    A_DISABLE_PIN
+#define Y2_STEP_PORT      A_STEP_PORT
+#define Y2_STEP_PIN       A_STEP_PIN
+#define Y2_DIRECTION_PORT A_DIRECTION_PORT
+#define Y2_DIRECTION_PIN  A_DIRECTION_PIN
+#define Y2_DISABLE_PORT   A_DISABLE_PORT
+#define Y2_DISABLE_PIN    A_DISABLE_PIN
 
 //#define SQUARING_ENABLED - DO NOT ENABLE! work in progress!
 
@@ -84,9 +84,9 @@
 #define Z_LIMIT_BIT         (1<<Z_LIMIT_PIN)
 
 #ifdef SQUARING_ENABLED
-#define X2_LIMIT_PORT       PIOA
-#define X2_LIMIT_PIN        11  // Due Digital Pin 18
-#define X2_LIMIT_BIT        (1<<Z_LIMIT_PIN)
+#define Y2_LIMIT_PORT       PIOA
+#define Y2_LIMIT_PIN        11  // Due Digital Pin 18
+#define Y2_LIMIT_BIT        (1<<Z_LIMIT_PIN)
 #endif
 
 // Define homing/hard limit switch max input pins.
@@ -101,9 +101,9 @@
 #define Z_LIMIT_BIT_MAX     (1<<Z_LIMIT_PIN_MAX)
 
 #ifdef SQUARING_ENABLED
-#define X2_LIMIT_PORT_MAX   PIOA
-#define X2_LIMIT_PIN_MAX    11  // Due Digital Pin 18
-#define X2_LIMIT_BIT_MAX    (1<<Z_LIMIT_PIN)
+#define Y2_LIMIT_PORT_MAX   PIOA
+#define Y2_LIMIT_PIN_MAX    11  // Due Digital Pin 18
+#define Y2_LIMIT_BIT_MAX    (1<<Z_LIMIT_PIN)
 #endif
 
 // Define spindle enable and spindle direction output pins.
